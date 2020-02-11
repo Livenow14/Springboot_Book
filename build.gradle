@@ -31,7 +31,8 @@ dependencies {
     compile('org.springframework.boot:spring-boot-starter-data-jpa')
     compile('com.h2database:h2')
     compile('org.springframework.boot:spring-boot-starter-mustache')
-    compile('org.springframework.boot:spring-boot-starter-oauth2-client')
+    compile('org.springframework.boot:spring-boot-starter-oauth2-client') //로그인 기능 사용을 위한 의존성 추가
+    compile('org.springframework.session:spring-session-jdbc')  //jdbc 데이터베이스를 사용하기위한 의존성
     testCompile('org.springframework.boot:spring-boot-starter-test')
 
 }

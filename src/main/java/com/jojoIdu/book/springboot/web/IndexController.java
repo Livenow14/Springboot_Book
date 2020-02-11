@@ -1,6 +1,7 @@
 package com.jojoIdu.book.springboot.web;
 
 
+import com.jojoIdu.book.springboot.config.auth.LoginUser;
 import com.jojoIdu.book.springboot.config.auth.dto.SessionUser;
 import com.jojoIdu.book.springboot.domain.user.User;
 import com.jojoIdu.book.springboot.service.posts.PostsService;
@@ -21,10 +22,10 @@ public class IndexController {
     private final HttpSession httpSession;
 
     @GetMapping("/")
-    public String index(Model model){
+    public String index(Model model, @LoginUser SessionUser user){
+
         model.addAttribute("posts", postsService.findAllDesc());
 
-        SessionUser user = (SessionUser) httpSession.getAttribute("user");
         if(user !=null){
             model.addAttribute("userName", user.getName());
         }
