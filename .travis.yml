@@ -12,7 +12,8 @@ cache:
     - '$HOME/.m2/repository'
     - '$HOME/.gradle'
 
-script: "./gradlew clean build"
+
+script: "chmod +x gradlew && ./gradlew clean build"
 
 before_deploy:
   - zip -r springboot2-webservice-book *
