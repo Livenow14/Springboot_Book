@@ -59,6 +59,7 @@ public class OAuthAttributes {
                 .name(name)
                 .email(email)
                 .picture(picture)
+                //.role(Role.GUEST)
                 .role(Role.USER)    //일반 사용자가 글을 등록할 수 있계끔 반경 -> 나중에 관리자 모드를 따로 추가 하는 것이 더 나은 방법 현재는 h2로 접근가능
                 .build();
     }
