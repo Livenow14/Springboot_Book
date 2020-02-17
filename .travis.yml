@@ -45,6 +45,7 @@ deploy:
     wait-until-deployed: true
 
     # ruby 오류 확인으로, 업데이트 후 재시도
+    #aws - sdk 설치
 
 # CI 실행 완료시 메일로 알람
 notifications:
