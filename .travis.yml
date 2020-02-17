@@ -44,11 +44,11 @@ deploy:
     key: Springboot_Book.zip # 빌드 파일을 압축해서 전달
     bundle_type: zip
     application: springboot2-webservice-book # 웹 콘솔에서 등록한 CodeDeploy 어플리케이션
-    deployment_group: springboot2-webservice-book-group # 웹 콘솔에서 등록한 CodeDeploy 배포 그룹 >>그룹 설정 변경
+    deployment_group: springboot2-webservice-book-group # 웹 콘솔에서 등록한 CodeDeploy 배포 그룹
     region: ap-northeast-2
     wait-until-deployed: true
 
-    # 무엇이 문제였는지는 모르지만 성공
+
 
 # CI 실행 완료시 메일로 알람
 notifications:
