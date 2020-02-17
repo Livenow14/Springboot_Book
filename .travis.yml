@@ -48,8 +48,7 @@ deploy:
     region: ap-northeast-2
     wait-until-deployed: true
 
-    # ruby 오류 확인으로, 업데이트 후 재시도
-    #aws - sdk 설치 update 완료
+    # s3 재설치
 
 # CI 실행 완료시 메일로 알람
 notifications:
